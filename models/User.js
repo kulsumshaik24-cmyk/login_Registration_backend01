@@ -10,7 +10,8 @@ const UserSchema = new mongoose.Schema({
   phone: { type: String, required: true },
   city: { type: String, required: true },
   country: { type: String, required: true },
-  dob: { type: String, required: true }
+  dob: { type: String, required: true },
+  photo: { type: String, default: '' }
 }, { timestamps: true });
 
 module.exports = mongoose.model('User', UserSchema);
